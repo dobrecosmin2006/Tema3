@@ -6,6 +6,8 @@ package surse;
 public class Ursi extends Animal implements IEatingZoo {
 
     public boolean Carnivor = true;
+    public boolean isEating = false;
+    public boolean isSleeping = false;
 
     public Ursi(String NumeUrsulet) {
 
@@ -16,10 +18,19 @@ public class Ursi extends Animal implements IEatingZoo {
         return Carnivor;
     }
 
+    public void WakeUp() {
+        this.isSleeping = false;
+    }
+
+    public void FinishEating() {
+        this.isEating = false;
+    }
+
     @Override
     public void eat() {
         // in this class our teddy bears will eat
-        System.out.println(" This teddy bear is eating now.");
+        System.out.println(" This teddy bear is eating now." + getAnimalName());
+        this.isEating = true;
     }
 
     @Override
@@ -28,6 +39,7 @@ public class Ursi extends Animal implements IEatingZoo {
         // this function is for sleeping time
 
         System.out.println(" This bear is sleeping now !" + getAnimalName());
+        this.isSleeping = true;
     }
 
     @Override
@@ -36,7 +48,6 @@ public class Ursi extends Animal implements IEatingZoo {
         if (!Anotimp.startsWith("Win")) {
             System.out.println("  Not Winter !!! ");
             return false;
-
 
         }
         // in this case, i will have hibernation in winter
