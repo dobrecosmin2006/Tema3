@@ -30,14 +30,14 @@ public class Bears extends Animal implements IEatingZoo {
     }
 
     @Override
-    public void eat() {
+    public void eat() throws MyLastException {
         // in this class our teddy bears will eat
         System.out.println(" This teddy bear is eating now." + getAnimalName());
         this.isEating = true;
     }
 
     @Override
-    public void sleep() {
+    public void sleep() throws MyLastException {
 
         // this function is for sleeping time
 
@@ -46,7 +46,7 @@ public class Bears extends Animal implements IEatingZoo {
     }
 
     @Override
-    public boolean Hibernare_IARNA(String Anotimp) {
+    public boolean Hibernation_winter(String Anotimp) {
 
         if (!Anotimp.startsWith("Win")) {
             System.out.println("  Not Winter !!! ");

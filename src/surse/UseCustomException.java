@@ -1,12 +1,11 @@
-package Main;
+package surse;
 
 import surse.MyCustomizedException;
 
 /**
  * Created by Mihai on 10/28/2014.
  * <p/>
- * clasa Main . aici voi rula programul prin folosirea
- * catorva metode
+ *  this exception is very complexed created, it is only for example ... for another complexity Cexception extented
  */
 
 

@@ -13,7 +13,7 @@ public abstract class Animal {
         *
      */
 
-    public abstract boolean Hibernare_IARNA(String Anotimp);
+    public abstract boolean Hibernation_winter(String Anotimp);
 
     public String getAnimalName() {
         return mNameAnimal;

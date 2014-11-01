@@ -1,10 +1,7 @@
 package Main;
 
-import surse.IEatingZoo;
-import surse.MyCustomizedException;
-import Main.UseCustomException;
-import surse.Bears;
-import surse.Animal;
+import surse.*;
+import surse.MyLastException;
 
 
 public class Main {
@@ -13,7 +10,7 @@ public class Main {
     public static void main(String[] arguments) {
 
         /*
-        * In this class MAIN i will execute some methods :)
+         *  this is my main class for execution some of my methods
          */
 
 
@@ -32,20 +29,33 @@ public class Main {
 
             System.out.println(" Incinta 2 ZOO:\n " + UrsulNr112.getAnimalName());
 
-
+            /*
+            *  I will put my teddy bears to sleep and to eat, consequently
+             */
             System.out.println(" it's time to sleep");
             UrsulNr112.sleep();
 
             System.out.println(" it's time to eat");
             UrsulNr111.eat();
 
-
+            /*
+            *
+            *  My methods are for : sleeping, waking up, eating and finishing up
+             */
             UrsulNr111.FinishEating();
 
             System.out.println(" Change of plans !! ");
+        } catch (Exception e) {
+            System.out.println("Exception while running the code example" + e.getMessage());
+        }
+            /*
+             * All the teddy bears will rest for all the winter season :)
+              */
+
+        try {
 
             String now = "Winter";
-            if (UrsulNr113.Hibernare_IARNA(now)) {
+            if (UrsulNr113.Hibernation_winter(now)) {
 
                 UrsulNr113.sleep();
 
@@ -55,22 +65,31 @@ public class Main {
             }
 
             now = "Spring";
-            if (!UrsulNr113.Hibernare_IARNA(now)) {
+            if (!UrsulNr113.Hibernation_winter(now)) {
 
                 UrsulNr113.WakeUp();
                 System.out.println(" The bear " + UrsulNr113.getAnimalName() + " has been waked up.");
 
             } else {
-                
+
                 System.out.println(" The teddy bear is still sleeping ... because it's still Winter! ");
             }
 
+        } catch (MyLastException e) {
 
-        } catch (Exception e) {
-
-            System.out.println(e);
+            System.out.println("Exception while running the code example" + e.getMessage());
 
         }
+
+        try {
+            UrsulNr111.sleep();
+            //  int test =1/0;
+        } catch (MyLastException e) {
+            System.out.println(" My test was to show how to use my class exception extended " + e.getMessage());
+
+        }
+
+
 
     }
 }
