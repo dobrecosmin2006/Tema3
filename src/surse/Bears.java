@@ -3,13 +3,16 @@ package surse;
 /**
  * Created by Mihai on 10/28/2014.
  */
-public class Ursi extends Animal implements IEatingZoo {
+
+
+public class Bears extends Animal implements IEatingZoo {
+
 
     public boolean Carnivor = true;
     public boolean isEating = false;
     public boolean isSleeping = false;
 
-    public Ursi(String NumeUrsulet) {
+    public Bears(String NumeUrsulet) {
 
         setAnimalName(NumeUrsulet);
     }
@@ -56,3 +59,4 @@ public class Ursi extends Animal implements IEatingZoo {
         return true;
     }
 }
+
