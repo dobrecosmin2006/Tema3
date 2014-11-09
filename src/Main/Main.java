@@ -5,7 +5,7 @@ import surse.IEatingZoo;
 import surse.MyLastException;
 
 /*
-* DiagramUML is presented and modified
+* DiagramUML is presented and modified and another new diagram have been added
  */
 
 public class Main {
