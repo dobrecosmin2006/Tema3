@@ -1,6 +1,7 @@
 package Main;
 
-import surse.*;
+import surse.Bears;
+import surse.IEatingZoo;
 import surse.MyLastException;
 
 /*

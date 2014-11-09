@@ -6,8 +6,6 @@ package surse;
  * this is my interface for my project used by all my classes
  */
 
-import surse.MyLastException;
-
 public interface IEatingZoo {
 
 

@@ -1,11 +1,9 @@
 package surse;
 
-import surse.MyCustomizedException;
-
 /**
  * Created by Mihai on 10/28/2014.
  * <p/>
- *  this exception is very complexed created, it is only for example ... for another complexity Cexception extented
+ * this exception is very complexed created, it is only for example ... for another complexity Cexception extented
  */
 
 
