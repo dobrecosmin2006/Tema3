@@ -3,6 +3,9 @@ package Main;
 import surse.*;
 import surse.MyLastException;
 
+/*
+* DiagramUML is presented
+ */
 
 public class Main {
 
